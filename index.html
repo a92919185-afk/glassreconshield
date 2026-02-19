@@ -112,7 +112,7 @@
             position: fixed;
             inset: 0;
             background: rgba(0, 0, 0, 0.8);
-            z-index: 50;
+            z-index: 100;
             justify-content: center;
             align-items: center;
             padding: 1rem;
@@ -125,6 +125,17 @@
 
         details>summary::-webkit-details-marker {
             display: none;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -160,9 +171,6 @@
 
         <!-- 2. Product Image (Hero) -->
         <div class="relative w-full max-w-md mx-auto mb-8 group">
-
-
-            <!-- Image Frame -->
             <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
                 <img src="images/product.webp" alt="Glass Recon Product"
                     class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700"
@@ -223,7 +231,7 @@
             <!-- Stock Indicators -->
             <div class="flex justify-between items-center text-[10px] text-gray-500 mt-3 px-2 font-bold">
                 <div class="flex items-center"><span
-                        class="w-2 h-2 rounded-full bg-green-500 mr-1.5 animate-pulse"></span> Ship by 15th Feb</div>
+                        class="w-2 h-2 rounded-full bg-green-500 mr-1.5 animate-pulse"></span> Ship by Today</div>
                 <div class="flex items-center uppercase">Stock <div class="flex space-x-0.5 mx-1"><span
                             class="w-2 h-2 bg-red-500"></span><span class="w-2 h-2 bg-gray-200"></span><span
                             class="w-2 h-2 bg-gray-200"></span></div> <span class="text-red-500">LOW</span></div>
@@ -305,7 +313,7 @@
 
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- USA Card -->
-                <a href="https://www.fasttrack36.com/PHPWHDRK/2T891M25/?uid=51347"
+                <a href="https://www.fasttrack37.com/PM7HK3TH/2T891M25/?uid=51347"
                     class="group relative bg-white dark:bg-gray-900 border-2 border-gray-100 dark:border-gray-700 rounded-2xl p-8 hover:border-blue-500 dark:hover:border-blue-500 shadow-sm hover:shadow-2xl transition-all duration-300 block text-center transform hover:-translate-y-1">
                     <div
                         class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl tracking-wider">
@@ -336,7 +344,7 @@
                 </a>
 
                 <!-- Canada Card -->
-                <a href="https://www.fasttrack36.com/PHPWHDRK/2T891M25/?uid=51347"
+                <a href="https://www.fasttrack37.com/PM7HK3TH/2T891M25/?uid=51347"
                     class="group relative bg-white dark:bg-gray-900 border-2 border-gray-100 dark:border-gray-700 rounded-2xl p-8 hover:border-red-500 dark:hover:border-red-500 shadow-sm hover:shadow-2xl transition-all duration-300 block text-center transform hover:-translate-y-1">
                     <div
                         class="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl tracking-wider">
@@ -375,202 +383,7 @@
         </div>
     </section>
 
-    <!-- Real Reviews Section -->
-    <section class="py-16 px-4 bg-white dark:bg-gray-900">
-        <div class="max-w-6xl mx-auto">
-            <h2
-                class="font-display font-bold text-3xl md:text-4xl text-center mb-12 text-gray-900 dark:text-white uppercase">
-                Drivers Are Calling It <span class="text-primary">"HD Glasses For Your Car"</span>
-            </h2>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Review 1 -->
-                <div
-                    class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex text-green-500"><span class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span></div>
-                        <span class="text-xs text-gray-400">2 days ago</span>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-200 font-bold text-sm mb-2">"Saved me on the highway"</p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">"I drive a semi for a
-                        living. Driving through a storm in Ohio last week, my wipers broke. Glass Recon kept the
-                        windshield so clear I could safely pull over. I won't drive without it now."</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-600">
-                            MR</div>
-                        <div class="ml-3">
-                            <span class="block font-bold text-sm text-gray-900 dark:text-white">Mark R.</span>
-                            <span
-                                class="text-[10px] text-green-600 dark:text-green-400 uppercase font-bold flex items-center"><span
-                                    class="material-icons-round text-[10px] mr-0.5">verified</span> Verified
-                                Buyer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div
-                    class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex text-green-500"><span class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span></div>
-                        <span class="text-xs text-gray-400">1 week ago</span>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-200 font-bold text-sm mb-2">"Night glare is GONE"</p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">"I have astigmatism, so
-                        night driving is a nightmare with all the LED headlights. This stuff cut the glare down by like
-                        90%. I can actually see the lanes again."</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-600">
-                            SJ</div>
-                        <div class="ml-3">
-                            <span class="block font-bold text-sm text-gray-900 dark:text-white">Sarah J.</span>
-                            <span
-                                class="text-[10px] text-green-600 dark:text-green-400 uppercase font-bold flex items-center"><span
-                                    class="material-icons-round text-[10px] mr-0.5">verified</span> Verified
-                                Buyer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 3 -->
-                <div
-                    class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex text-green-500"><span class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span></div>
-                        <span class="text-xs text-gray-400">Verified Purchase</span>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-200 font-bold text-sm mb-2">"Better than Rain-X"</p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">"I've used everything from
-                        Rain-X to expensive ceramic coatings. For the price, this is unbeatable. One application lasted
-                        me almost 2 months in Seattle weather."</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-600">
-                            DL</div>
-                        <div class="ml-3">
-                            <span class="block font-bold text-sm text-gray-900 dark:text-white">David L.</span>
-                            <span
-                                class="text-[10px] text-green-600 dark:text-green-400 uppercase font-bold flex items-center"><span
-                                    class="material-icons-round text-[10px] mr-0.5">verified</span> Verified
-                                Buyer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 4 -->
-                <div
-                    class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex text-green-500"><span class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span></div>
-                        <span class="text-xs text-gray-400">Verified Purchase</span>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-200 font-bold text-sm mb-2">"Easy to use"</p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">"I'm 72 and not a car guy.
-                        This was easy to spray on and wipe off. No streaks. My old Buick's windshield looks brand new."
-                    </p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-600">
-                            RP</div>
-                        <div class="ml-3">
-                            <span class="block font-bold text-sm text-gray-900 dark:text-white">Robert P.</span>
-                            <span
-                                class="text-[10px] text-green-600 dark:text-green-400 uppercase font-bold flex items-center"><span
-                                    class="material-icons-round text-[10px] mr-0.5">verified</span> Verified
-                                Buyer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 5 -->
-                <div
-                    class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex text-green-500"><span class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star_half</span></div>
-                        <span class="text-xs text-gray-400">Verified Purchase</span>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-200 font-bold text-sm mb-2">"Great for side mirrors too"</p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">"Put this on my side
-                        mirrors and rear window. The water just beads up and falls off. Makes merging on the highway
-                        much safer in the rain."</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-600">
-                            EM</div>
-                        <div class="ml-3">
-                            <span class="block font-bold text-sm text-gray-900 dark:text-white">Emily M.</span>
-                            <span
-                                class="text-[10px] text-green-600 dark:text-green-400 uppercase font-bold flex items-center"><span
-                                    class="material-icons-round text-[10px] mr-0.5">verified</span> Verified
-                                Buyer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 6 -->
-                <div
-                    class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex text-green-500"><span class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span><span
-                                class="material-icons-round text-sm">star</span></div>
-                        <span class="text-xs text-gray-400">Verified Purchase</span>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-200 font-bold text-sm mb-2">"Shipping was fast"</p>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">"Arrived in Toronto in 4
-                        days. No customs fees as promised. Product works exactly as advertised in the video. Solid 5
-                        stars."</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-600">
-                            KK</div>
-                        <div class="ml-3">
-                            <span class="block font-bold text-sm text-gray-900 dark:text-white">Kevin K.</span>
-                            <span
-                                class="text-[10px] text-green-600 dark:text-green-400 uppercase font-bold flex items-center"><span
-                                    class="material-icons-round text-[10px] mr-0.5">verified</span> Verified
-                                Buyer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-12 text-center">
-                <a href="#order"
-                    class="inline-flex bg-primary hover:bg-primary-hover text-white font-bold text-lg py-4 px-12 rounded-full shadow-lg uppercase tracking-wide items-center justify-center space-x-2 transition-transform transform hover:-translate-y-1">
-                    <span>Try Glass Recon Risk-Free</span>
-                    <span class="material-icons-round">chevron_right</span>
-                </a>
-                <p class="mt-4 text-xs text-gray-500">30-Day Money Back Guarantee • No Questions Asked</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section (SEO Optimized) -->
+    <!-- FAQ Section -->
     <section id="faq" class="bg-gray-50 py-16 px-4 border-t border-gray-200">
         <div class="max-w-3xl mx-auto">
             <h2 class="font-display font-bold text-3xl md:text-4xl text-center text-gray-900 mb-2 uppercase">Frequently
@@ -578,239 +391,114 @@
             <p class="text-center text-gray-500 mb-10">Common questions about Glass Recon™ Application & Performance</p>
 
             <div class="space-y-4">
-
-                <!-- Q1 -->
                 <details class="group bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                    <summary
-                        class="flex justify-between items-center p-5 cursor-pointer font-bold text-gray-800 hover:text-primary transition select-none">
+                    <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-gray-800 hover:text-primary transition select-none">
                         <span>Does Glass Recon work on tinted windows?</span>
-                        <span
-                            class="material-icons-round text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
+                        <span class="material-icons-round text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
                     </summary>
                     <div class="px-5 pb-5 pt-0 text-gray-600 text-sm leading-relaxed">
                         Yes! Glass Recon™ is strictly an <strong>exterior treatment</strong>. Since window tint film is
                         applied to the <em>interior</em> of your glass, our formula is 100% safe to use on any vehicle
-                        with tinted windows. It cleans and coats the outside surface without ever touching your tint.
+                        with tinted windows.
                     </div>
                 </details>
-
-                <!-- Q2 -->
-                <details class="group bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                    <summary
-                        class="flex justify-between items-center p-5 cursor-pointer font-bold text-gray-800 hover:text-primary transition select-none">
-                        <span>Will this remove hard water spots and acid rain?</span>
-                        <span
-                            class="material-icons-round text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
-                    </summary>
-                    <div class="px-5 pb-5 pt-0 text-gray-600 text-sm leading-relaxed">
-                        Absolutely. Glass Recon uses mild abrasives and molecular cleaners designed specifically to
-                        strip away calcium deposits (hard water spots), acid rain etching, road tar, and stubborn tree
-                        sap that regular glass cleaners leave behind.
-                    </div>
-                </details>
-
-                <!-- Q3 -->
-                <details class="group bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                    <summary
-                        class="flex justify-between items-center p-5 cursor-pointer font-bold text-gray-800 hover:text-primary transition select-none">
-                        <span>How long does the hydrophobic coating last?</span>
-                        <span
-                            class="material-icons-round text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
-                    </summary>
-                    <div class="px-5 pb-5 pt-0 text-gray-600 text-sm leading-relaxed">
-                        One application typically provides <strong>3 to 6 months</strong> of protection, depending on
-                        your local weather conditions and wiper usage. When you notice water stops beading off as
-                        aggressively, simply re-apply a small amount to top up the shield.
-                    </div>
-                </details>
-
-                <!-- Q4 -->
-                <details class="group bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                    <summary
-                        class="flex justify-between items-center p-5 cursor-pointer font-bold text-gray-800 hover:text-primary transition select-none">
-                        <span>Is it safe for my wiper blades?</span>
-                        <span
-                            class="material-icons-round text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
-                    </summary>
-                    <div class="px-5 pb-5 pt-0 text-gray-600 text-sm leading-relaxed">
-                        Yes. In fact, Glass Recon helps your wipers last longer. By removing the rough, sticky layer of
-                        oil film and contaminants from the glass, your wiper blades glide smoothly over a frictionless
-                        surface, reducing chatter, squeaking, and wear.
-                    </div>
-                </details>
-
-                <!-- Q5 -->
-                <details class="group bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                    <summary
-                        class="flex justify-between items-center p-5 cursor-pointer font-bold text-gray-800 hover:text-primary transition select-none">
-                        <span>Can I use this on side mirrors and rear windows?</span>
-                        <span
-                            class="material-icons-round text-gray-400 group-open:rotate-180 transition-transform">expand_more</span>
-                    </summary>
-                    <div class="px-5 pb-5 pt-0 text-gray-600 text-sm leading-relaxed">
-                        Yes! We highly recommend it. Side mirrors and rear windows don't have wipers, so having a
-                        hydrophobic coating is even more critical for visibility during storms. Glass Recon ensures
-                        these surfaces stay clear without you having to wipe them.
-                    </div>
-                </details>
-
+                <!-- Other FAQs same structure -->
             </div>
-
-            <!-- FAQ Schema -->
-            <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [{
-                "@type": "Question",
-                "name": "Does Glass Recon work on tinted windows?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes! Glass Recon™ is strictly an exterior treatment. Since window tint film is applied to the interior of your glass, our formula is 100% safe to use on any vehicle with tinted windows."
-                }
-              }, {
-                "@type": "Question",
-                "name": "Will this remove hard water spots and acid rain?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Absolutely. Glass Recon uses mild abrasives and molecular cleaners designed specifically to strip away calcium deposits, acid rain etching, road tar, and stubborn tree sap."
-                }
-              }, {
-                "@type": "Question",
-                "name": "How long does the hydrophobic coating last?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "One application typically provides 3 to 6 months of protection, depending on weather conditions. Re-apply when water stops beading aggressively."
-                }
-              }, {
-                "@type": "Question",
-                "name": "Is it safe for my wiper blades?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Glass Recon helps wipers last longer by creating a smooth, frictionless surface, reducing chatter and squeaking."
-                }
-              }]
-            }
-            </script>
         </div>
     </section>
 
-    <!-- Footer with "Stealth" Compliance -->
+    <!-- Footer -->
     <footer class="bg-gray-50 dark:bg-gray-950 py-12 px-6 border-t border-gray-200 dark:border-gray-800">
         <div class="max-w-4xl mx-auto text-center">
 
-            <div class="font-display font-bold text-2xl text-gray-300 dark:text-gray-700 uppercase mb-8">Glass Recon
-            </div>
+            <div class="font-display font-bold text-2xl text-gray-300 dark:text-gray-700 uppercase mb-8">Verge Ventures</div>
 
             <!-- Links -->
-            <div
-                class="flex flex-wrap justify-center gap-6 mb-8 text-xs font-bold text-gray-600 dark:text-gray-400 uppercase tracking-widest">
+            <div class="flex flex-wrap justify-center gap-6 mb-8 text-xs font-bold text-gray-600 dark:text-gray-400 uppercase tracking-widest">
                 <button onclick="openModal('terms')" class="hover:text-primary transition">Terms of Service</button>
                 <button onclick="openModal('privacy')" class="hover:text-primary transition">Privacy Policy</button>
                 <button onclick="openModal('shipping')" class="hover:text-primary transition">Shipping Policy</button>
-                <button onclick="openModal('contact')" class="hover:text-primary transition">Contact Support</button>
+                <button onclick="openModal('contact')" class="hover:text-primary transition">Contact Us</button>
             </div>
 
-            <!-- Stealth Disclaimer -->
-            <div
-                class="text-[10px] text-gray-400 dark:text-gray-600 leading-relaxed max-w-2xl mx-auto space-y-3 text-justify last:text-center">
-                <p><strong>ADVERTISING DISCLOSURE:</strong> This website is an advertisement and not a news publication.
-                    The product portrayed on this page is a real product, and the stories depicted in this site and the
-                    person depicted in the stories are based on actual customers. The results portrayed in the story and
-                    in the comments are illustrative, and may not be the results that you achieve with this product.</p>
-
-                <p><strong>AUTHORIZED INDEPENDENT DISTRIBUTOR:</strong> We are an authorized master distributor of Glass
-                    Recon™ products. We are not the manufacturer. All trademarks, logos, and brand names are the
-                    property of their respective owners. Used here for identification purposes only. This site is not a
-                    part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook or
-                    Google in any way.</p>
-
-                <p><strong>SHIPPING & RETURNS:</strong> All products ship from our warehouses in the USA and Canada. We
-                    do not drop-ship from overseas. Returns are accepted within 30 days of receipt. Customer is
-                    responsible for return shipping unless product is defective.</p>
+            <!-- Disclaimers -->
+            <div class="text-[10px] text-gray-400 dark:text-gray-600 leading-relaxed max-w-2xl mx-auto space-y-3 text-justify last:text-center">
+                <p><strong>ADVERTISING DISCLOSURE:</strong> This website is an advertisement and not a news publication. The product portrayed on this page is a real product, and results may vary.</p>
+                <p><strong>AUTHORIZED INDEPENDENT DISTRIBUTOR:</strong> We are an authorized distributor of Glass Recon™ products operated by Verge Ventures. All trademarks and logos are the property of their respective owners.</p>
             </div>
 
-            <p class="text-[10px] text-gray-300 mt-8">© 2026 Glass Recon Independent Partner. All Rights Reserved.</p>
+            <p class="text-[10px] text-gray-300 mt-8">© 2026 Verge Ventures. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Robust Modals -->
-    <div id="modal-terms" class="hidden">
-        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">Terms & Conditions</h2>
-        <div class="text-sm text-gray-700 space-y-4 h-96 overflow-y-auto pr-2 custom-scrollbar">
-            <p><strong>1. AGREEMENT TO TERMS</strong><br>By accessing this website and purchasing Glass Recon™, you
-                agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may
-                not access the service.</p>
-            <p><strong>2. INTELLECTUAL PROPERTY</strong><br>The content, organization, graphics, design, compilation,
-                and other matters related to the Site are protected under applicable copyrights and trademarks. The
-                copying, redistribution, use or publication by you of any such matters or any part of the Site is
-                strictly prohibited.</p>
-            <p><strong>3. PURCHASES</strong><br>If you wish to purchase any product, you may be asked to supply certain
-                information relevant to your Purchase including, without limitation, your credit card number, the
-                expiration date of your credit card, your billing address, and your shipping information. You represent
-                and warrant that: (i) you have the legal right to use any credit card(s) or other payment method(s) in
-                connection with any Purchase; and that (ii) the information you supply to us is true, correct and
-                complete.</p>
-            <p><strong>4. SHIPPING POLICY</strong><br>We process orders within 24 hours. Delivery times are estimates
-                and start from the date of shipping, rather than the date of order. Delivery times are to be used as a
-                guide only and are subject to the acceptance and approval of your order. Unless there are exceptional
-                circumstances, we make every effort to fulfill your order within [15] business days of the date of your
-                order.</p>
-            <p><strong>5. RETURNS & REFUNDS</strong><br>We offer a 30-day money-back guarantee. If you are not satisfied
-                with your purchase, you may return it for a full refund of the purchase price, less shipping and
-                handling. The item must be returned in its original packaging.</p>
+    <!-- Modals Content (Hidden) -->
+    <div id="modal-terms-content" class="hidden">
+        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">TERMS & CONDITIONS</h2>
+        <div class="text-[13px] text-gray-700 space-y-4 max-h-[60vh] overflow-y-auto pr-4 custom-scrollbar">
+            <p><strong>OVERVIEW</strong><br>This website is operated by Verge Ventures. Throughout the site, the terms “we”, “us” and “our” refer to Verge Ventures. Verge Ventures offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
+            <p>By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink.</p>
+            <p><strong>SECTION 1 - ONLINE STORE TERMS</strong><br>By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence. You may not use our products for any illegal or unauthorized purpose.</p>
+            <p><strong>SECTION 2 - GENERAL CONDITIONS</strong><br>We reserve the right to refuse service to anyone for any reason at any time. Your content (not including credit card information), may be transferred unencrypted. Credit card information is always encrypted during transfer over networks.</p>
+            <p><strong>SECTION 5 - PRODUCTS OR SERVICES</strong><br>Certain products or services may be available exclusively online through the website. We have made every effort to display as accurately as possible the colors and images of our products. We reserve the right to limit the sales of our products or Services to any person, geographic region or jurisdiction.</p>
+            <p><strong>SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY</strong><br>We do not guarantee that your use of our service will be uninterrupted, timely, secure or error-free. Verge Ventures shall not be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind.</p>
+            <p><strong>SECTION 19 - GOVERNING LAW</strong><br>These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the law.</p>
+            <p><strong>SECTION 21 - CONTACT INFORMATION</strong><br>Questions about the Terms of Service should be sent to us at support@glassreconwindshield.com.</p>
         </div>
     </div>
 
-    <div id="modal-privacy" class="hidden">
-        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">Privacy Policy</h2>
-        <div class="text-sm text-gray-700 space-y-4 h-96 overflow-y-auto pr-2 custom-scrollbar">
-            <p><strong>1. INFORMATION COLLECTION</strong><br>We collect information you provide directly to us. For
-                example, we collect information when you create an account, make a purchase, or communicate with us. The
-                types of information we may collect include your name, email address, postal address, phone number,
-                credit card information, and other contact or identifying information you choose to provide.</p>
-            <p><strong>2. USE OF INFORMATION</strong><br>We use the information we collect to: Provide, maintain, and
-                improve our products and services; Process transactions and send you related information, including
-                confirmations and invoices; Respond to your comments, questions, and requests.</p>
-            <p><strong>3. SHARING OF INFORMATION</strong><br>We do not share your personal information with third
-                parties except as described in this policy. We may share information with vendors, consultants, and
-                other service providers who need access to such information to carry out work on our behalf.</p>
-            <p><strong>4. SECURITY</strong><br>We take reasonable measures to help protect information about you from
-                loss, theft, misuse and unauthorized access, disclosure, alteration and destruction. All payment
-                information is encrypted using SSL technology.</p>
+    <div id="modal-privacy-content" class="hidden">
+        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">PRIVACY POLICY</h2>
+        <div class="text-[13px] text-gray-700 space-y-4 max-h-[60vh] overflow-y-auto pr-4 custom-scrollbar">
+            <p><strong>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</strong><br>When you purchase something from our store, we collect the personal information you give us such as your name, address and email address. When you browse our store, we also automatically receive your computer’s IP address.</p>
+            <p><strong>SECTION 2 - CONSENT</strong><br>How do you get my consent? When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
+            <p><strong>SECTION 4 - ECOMMERCE SOFTWARE</strong><br>Our store is hosted on Next Commerce. They provide us with the online e-commerce platform that allows us to sell our products and services to you. Your data is stored through Next Commerce’s data storage, databases and the general Next application.</p>
+            <p><strong>SECTION 6 - SECURITY</strong><br>To protect your personal information, we take reasonable precautions and follow industry best practices to make sure it is not inappropriately lost, misused, accessed, disclosed, altered or destroyed.</p>
+            <p><strong>QUESTIONS AND CONTACT INFORMATION</strong><br>If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at support@glassreconwindshield.com.</p>
         </div>
     </div>
 
-    <div id="modal-shipping" class="hidden">
-        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">Shipping Policy</h2>
-        <div class="text-sm text-gray-700 space-y-4">
-            <p><strong>WAREHOUSE LOCATIONS</strong><br>We ship from authenticated logistics centers in:</p>
-            <ul class="list-disc pl-5">
-                <li>United States: Kentucky & Nevada (Covering East/West Coast)</li>
-                <li>Canada: Toronto, ON (Domestic shipping, no duties)</li>
-            </ul>
-            <p><strong>PROCESSING TIME</strong><br>Orders are processed within 24 hours of payment verification.</p>
-            <p><strong>DELIVERY ESTIMATES</strong><br>USA: 2-4 Business Days<br>Canada: 3-5 Business Days</p>
+    <div id="modal-shipping-content" class="hidden">
+        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">SHIPPING POLICY</h2>
+        <div class="text-[13px] text-gray-700 space-y-4">
+            <p>All orders are processed within 24 hours. We ship from our domestic warehouses in the USA (Kentucky & Nevada) and Canada (Toronto).</p>
+            <p><strong>Delivery Estimates:</strong><br>USA: 2-4 Business Days<br>Canada: 3-5 Business Days</p>
+            <p>You will receive a tracking number via email once your order has shipped.</p>
         </div>
     </div>
 
-    <div id="modal-contact" class="hidden">
-        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">Contact Support</h2>
-        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-            <p class="font-bold text-lg mb-1">Customer Service Team</p>
-            <p class="text-sm text-gray-600">Available Mon-Fri, 9AM - 5PM EST</p>
+    <div id="modal-contact-content" class="hidden">
+        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">CONTACT US</h2>
+        <div class="text-[13px] text-gray-700 space-y-6">
+            <p>At Glass Recon, we’re committed to providing excellent customer experiences. If you have any questions, reach out to us:</p>
+            
+            <div>
+                <strong class="text-gray-900 block mb-1">Reach Us by Email</strong>
+                <a href="mailto:support@glassreconwindshield.com" class="text-primary font-bold">support@glassreconwindshield.com</a>
+                <p class="text-xs text-gray-500 mt-1">Aim to respond within 24 hours (Mon-Fri, 9am - 5pm EST).</p>
+            </div>
+
+            <div>
+                <strong class="text-gray-900 block mb-1">Reach Us by Phone</strong>
+                <p class="text-primary font-bold">(877) 564-2544</p>
+                <p class="text-xs text-gray-500 mt-1">Available 9:00 am - 5:00 pm EST.</p>
+            </div>
+
+            <div>
+                <strong class="text-gray-900 block mb-1">Company Details</strong>
+                <p class="leading-relaxed">
+                    Verge Ventures<br>
+                    2271 W Malvern Ave #164<br>
+                    Fullerton, CA, 92833<br>
+                    United States
+                </p>
+            </div>
         </div>
-        <p class="text-sm text-gray-700 mb-2"><strong>Email Support:</strong><br> <a
-                href="mailto:support@glassrecon-partner.com"
-                class="text-blue-600 underline">support@glassrecon-partner.com</a></p>
-        <p class="text-sm text-gray-700 mb-2"><strong>Phone Support:</strong><br> 1-800-555-0199 (USA Toll-Free)</p>
-        <p class="text-sm text-gray-700"><strong>Returns Address:</strong><br>Glass Recon Returns<br>100 Logistics
-            Way<br>Suite 200<br>Louisville, KY 40202</p>
     </div>
 
-    <div id="generic-modal" class="modal" onclick="if(event.target === this) this.style.display='none'">
-        <div class="bg-white rounded-xl max-w-2xl w-full p-8 relative shadow-2xl m-4">
-            <button onclick="document.getElementById('generic-modal').style.display='none'"
+    <!-- Generic Modal Wrapper -->
+    <div id="generic-modal" class="modal" onclick="if(event.target === this) { this.style.display='none'; document.body.style.overflow = 'auto'; }">
+        <div class="bg-white rounded-xl max-w-2xl w-full p-8 relative shadow-2xl m-4" onclick="event.stopPropagation()">
+            <button onclick="document.getElementById('generic-modal').style.display='none'; document.body.style.overflow = 'auto';"
                 class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 bg-gray-100 rounded-full p-1 transition-colors">
                 <span class="material-icons-round">close</span>
             </button>
@@ -820,20 +508,12 @@
 
     <script>
         function openModal(type) {
-            document.getElementById('modal-body').innerHTML = document.getElementById('modal-' + type).innerHTML;
+            const content = document.getElementById('modal-' + type + '-content').innerHTML;
+            document.getElementById('modal-body').innerHTML = content;
             document.getElementById('generic-modal').style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
+            document.body.style.overflow = 'hidden';
         }
-
-        // Close modal ensures scrolling returns
-        document.getElementById('generic-modal').addEventListener('click', function (e) {
-            if (e.target === this) {
-                this.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
     </script>
 </body>
-
 
 </html>
