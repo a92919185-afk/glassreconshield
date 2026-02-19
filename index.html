@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
@@ -8,70 +8,25 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/glass-favcon.png" />
 
-    <!-- Tracking Script -->
-    <script src="https://cdn.raadsgate.com/code/8300-f8261dcb-a4ca-4574-9388-536d255dfeb3"></script>
-
     <!-- Advanced SEO Configuration -->
-    <title>Glass Recon™ Official | #1 Oil Film Remover & Glass Shield (US/CA)</title>
+    <title>Glass Recon™ Official | Removedor de Película de Óleo & Proteção de Vidro</title>
     <meta name="description"
-        content="Restore factory clarity to your windshield. Glass Recon™ removes stubborn oil film, repels rain, and eliminates night glare. Trusted by 11,000+ drivers. Order Tariff-Free in USA & Canada.">
+        content="Melhore a clareza do seu para-brisas. Glass Recon™ ajuda a remover a película de óleo e melhora a visibilidade na chuva. Envio rápido para EUA e Canadá.">
     <meta name="keywords"
-        content="windshield cleaner, oil film remover for cars, car glass rain repellent, hydrophobic glass coating, night driving glare reduction, windshield stripper, glass recon review">
+        content="limpador de para-brisas, removedor de filme de óleo, repelente de chuva, revestimento de vidro, redução de brilho noturno">
     <link rel="canonical" href="https://glassreconshield.vercel.app/" />
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="product" />
-    <meta property="og:title" content="Glass Recon™ | The HD Glasses For Your Car" />
+    <meta property="og:title" content="Glass Recon™ | Clareza para seu Carro" />
     <meta property="og:description"
-        content="Don't drive blind. Remove windshield haze and repel rain instantly with Molecular-Recon Technology. 70% OFF + Free Shipping." />
+        content="Remova a névoa do para-brisas e melhore a visibilidade na chuva com a Tecnologia Molecular-Recon." />
     <meta property="og:image" content="https://glassreconshield.vercel.app/images/product.webp" />
     <meta property="og:url" content="https://glassreconshield.vercel.app/" />
     <meta property="og:site_name" content="Glass Recon Independent Distributor" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Glass Recon™ | Clear The Haze">
-    <meta name="twitter:description"
-        content="The ultimate windshield restoration kit. Strip oil film and repel rain in one step.">
-    <meta name="twitter:image" content="https://glassreconshield.vercel.app/images/product.webp">
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Glass Recon™ Windshield Cleaning Compound",
-      "image": "https://glassreconshield.vercel.app/images/product.webp",
-      "description": "Professional-grade oil film remover and hydrophobic coating for automotive glass. Eliminates glare and improves wiper performance.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Glass Recon"
-      },
-      "sku": "GR-USA-001",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://glassreconshield.vercel.app/",
-        "priceCurrency": "USD",
-        "price": "24.95",
-        "priceValidUntil": "2026-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition",
-        "shippingDetails": {
-          "@type": "OfferShippingDetails",
-          "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "USD" },
-          "deliveryTime": {
-            "@type": "ShippingDeliveryTime",
-            "transitTime": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 4, "unitCode": "d" }
-          }
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "11548"
-      }
-    }
-    </script>
+    <!-- Tracking Script (Nota: Só deve ativar após consentimento em configurações estritas de 2026, mas mantido aqui por compatibilidade) -->
+    <script src="https://cdn.raadsgate.com/code/8300-f8261dcb-a4ca-4574-9388-536d255dfeb3"></script>
 
     <!-- Tailwind & Fonts -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
@@ -148,11 +103,17 @@
 
 <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased font-sans">
 
-    <!-- Barra de Topo Neon (70% de desconto) -->
+    <!-- Barra de Topo (Disclaimer visível) -->
+    <div
+        class="bg-gray-100 dark:bg-gray-800 text-center py-1 px-4 text-[10px] font-medium text-gray-500 uppercase tracking-wide border-b border-gray-200">
+        Advertorial - Este site é um anúncio publicitário e não um artigo de notícias.
+    </div>
+    
+    <!-- Barra de Oferta -->
     <div
         class="bg-[#9fff9f] text-center py-2 px-4 text-xs font-bold text-black uppercase tracking-wide border-b border-gray-200">
-        OBTENHA 70% DE DESCONTO AGORA! USE O CÓDIGO: <span
-            class="bg-black text-white px-2 py-0.5 rounded mx-1 text-sm">GLASS26</span> - OFERTA POR TEMPO LIMITADO
+        OFERTA ESPECIAL DISPONÍVEL! USE O CÓDIGO: <span
+            class="bg-black text-white px-2 py-0.5 rounded mx-1 text-sm">GLASS26</span>
     </div>
 
     <!-- Secção Hero -->
@@ -160,7 +121,8 @@
 
         <!-- Logótipo -->
         <div class="flex justify-center mb-5">
-            <img src="images/logo.webp" alt="Glass Recon" class="h-9 w-auto object-contain" />
+            <img src="images/logo.webp" alt="Glass Recon" class="h-9 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('alt-logo').style.display='block'" />
+            <h1 id="alt-logo" style="display:none" class="font-display text-2xl font-bold uppercase tracking-tighter">Glass<span class="text-primary">Recon</span></h1>
         </div>
 
         <!-- 1. Prova Social -->
@@ -172,7 +134,7 @@
                 <span class="material-icons-round text-[12px]">star</span>
                 <span class="material-icons-round text-[12px]">star</span>
             </div>
-            <span class="text-xs text-gray-500 font-bold tracking-tight">4.9/5 Baseado em mais de 11.548 Clientes Felizes</span>
+            <span class="text-xs text-gray-500 font-bold tracking-tight">Avaliado positivamente por motoristas</span>
         </div>
 
         <!-- 2. Imagem do Produto -->
@@ -180,18 +142,18 @@
             <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
                 <img src="images/product.webp" alt="Produto Glass Recon"
                     class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700"
-                    onerror="this.src='https://placehold.co/800x800/222/fff?text=Product+Image'" />
+                    onerror="this.src='https://placehold.co/800x800/222/fff?text=Glass+Recon+Kit'" />
             </div>
         </div>
 
         <!-- 3. Título Principal -->
-        <h1 class="font-sans font-extrabold text-4xl md:text-5xl leading-tight text-gray-900 uppercase mb-4">
-            Domine a Estrada.<br /><span class="text-primary">Limpe o Nevoeiro.</span>
+        <h1 class="font-sans font-extrabold text-3xl md:text-5xl leading-tight text-gray-900 uppercase mb-4">
+            Domine a Estrada.<br /><span class="text-primary">Visão Mais Clara.</span>
         </h1>
 
         <!-- 4. Subtítulo -->
         <p class="text-base text-gray-600 leading-relaxed font-light mb-6 px-4">
-            Isto não é apenas um limpa-para-brisas — é um escudo líquido para o seu vidro. Experimente a única ferramenta alimentada pela tecnologia <strong>Molecular-Recon</strong>.
+            Mais do que um simples limpador. O Glass Recon utiliza tecnologia de limpeza profunda para remover películas de óleo e ajudar a repelir a água para uma condução mais segura.
         </p>
 
         <!-- 5. Lista de Benefícios -->
@@ -199,47 +161,46 @@
             <div class="flex items-start">
                 <span class="material-icons-round text-green-500 mr-3 mt-0.5">check_circle</span>
                 <div>
-                    <strong class="text-gray-900 block font-bold text-sm uppercase">Limpeza Molecular Profunda</strong>
-                    <span class="text-gray-500 text-xs">Elimina óleo e película persistentes</span>
+                    <strong class="text-gray-900 block font-bold text-sm uppercase">Limpeza Profunda</strong>
+                    <span class="text-gray-500 text-xs">Ajuda a remover óleo e resíduos persistentes</span>
                 </div>
             </div>
             <div class="flex items-start">
                 <span class="material-icons-round text-green-500 mr-3 mt-0.5">check_circle</span>
                 <div>
-                    <strong class="text-gray-900 block font-bold text-sm uppercase">Escudo Hidrofóbico</strong>
-                    <span class="text-gray-500 text-xs">Repele a chuva com uma barreira invisível</span>
+                    <strong class="text-gray-900 block font-bold text-sm uppercase">Efeito Hidrofóbico</strong>
+                    <span class="text-gray-500 text-xs">Ajuda a repelir a chuva do vidro</span>
                 </div>
             </div>
             <div class="flex items-start">
                 <span class="material-icons-round text-green-500 mr-3 mt-0.5">check_circle</span>
                 <div>
-                    <strong class="text-gray-900 block font-bold text-sm uppercase">Clareza de Visão Noturna</strong>
-                    <span class="text-gray-500 text-xs">Acaba com o encandeamento instantaneamente</span>
+                    <strong class="text-gray-900 block font-bold text-sm uppercase">Melhor Visibilidade Noturna</strong>
+                    <span class="text-gray-500 text-xs">Reduz o brilho difuso dos faróis</span>
                 </div>
             </div>
         </div>
 
-        <!-- 6. Botão de Compra (70% de desconto) -->
+        <!-- 6. Botão de Compra -->
         <div class="max-w-md mx-auto">
             <div
                 class="flex items-center justify-center text-[10px] font-bold text-gray-400 mb-2 uppercase tracking-wide">
                 <img src="https://flagcdn.com/16x12/us.png" alt="US" class="mr-1.5 opacity-70">
-                Envios sem taxas para os EUA e Canadá
+                Envios Disponíveis para EUA e Canadá
             </div>
 
             <a href="#order"
                 class="w-full bg-primary hover:bg-primary-hover text-white font-bold text-xl py-4 rounded-xl shadow-lg uppercase tracking-wide flex items-center justify-center space-x-2 transition-transform hover:-translate-y-1 active:scale-95">
-                <span>Encomendar e Poupar 70%</span>
+                <span>Verificar Disponibilidade</span>
                 <span class="material-icons-round">double_arrow</span>
             </a>
 
             <!-- Indicadores de Stock -->
-            <div class="flex justify-between items-center text-[10px] text-gray-500 mt-3 px-2 font-bold">
-                <div class="flex items-center"><span
-                        class="w-2 h-2 rounded-full bg-green-500 mr-1.5 animate-pulse"></span> Envio hoje mesmo</div>
-                <div class="flex items-center uppercase">Stock <div class="flex space-x-0.5 mx-1"><span
-                            class="w-2 h-2 bg-red-500"></span><span class="w-2 h-2 bg-gray-200"></span><span
-                            class="w-2 h-2 bg-gray-200"></span></div> <span class="text-red-500">BAIXO</span></div>
+            <div class="flex justify-center items-center text-[10px] text-gray-500 mt-3 px-2 font-bold">
+                <div class="flex items-center uppercase">
+                    <span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+                    Alta Demanda
+                </div>
             </div>
         </div>
 
@@ -248,14 +209,14 @@
     <!-- Barra de Confiança -->
     <section
         class="py-8 border-t border-b border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 overflow-hidden">
-        <p class="text-center text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold mb-6">Destaque na Media Automóvel</p>
+        <p class="text-center text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold mb-6">Como visto em discussões automotivas</p>
         <div
-            class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition duration-500 px-6">
+            class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale px-6">
             <span class="font-serif font-bold text-xl md:text-2xl">NBC <span
                     class="text-xs font-sans block font-normal text-center">Auto</span></span>
             <span class="font-sans font-black text-xl md:text-2xl tracking-tighter">USA TODAY</span>
             <span class="font-display font-bold text-xl md:text-2xl">FOX <span
-                    class="text-xs font-sans block font-normal text-center text-red-600">News</span></span>
+                    class="text-xs font-sans block font-normal text-center">News</span></span>
             <span class="font-serif font-bold text-xl md:text-2xl">Car & Driver</span>
         </div>
     </section>
@@ -264,36 +225,36 @@
     <section class="py-16 px-4 bg-white dark:bg-gray-900">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 dark:text-white mb-6 uppercase">
-                Porque é que as Escovas Normais não Bastam
+                Porque limpar não é suficiente
             </h2>
             <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-10">
-                As escovas empurram a água; não a repelem. Com o tempo, o vidro desenvolve picos e vales microscópicos onde o óleo, a sujidade da estrada e a chuva se fixam, causando <span class="font-bold text-gray-900 dark:text-white">encandeamento perigoso à noite</span> e <span class="font-bold text-gray-900 dark:text-white">visão turva em tempestades</span>.
+                As escovas comuns muitas vezes apenas espalham a água. Com o tempo, o vidro acumula resíduos microscópicos onde o óleo e a sujidade se fixam, o que pode causar <span class="font-bold text-gray-900 dark:text-white">brilho excessivo à noite</span> e <span class="font-bold text-gray-900 dark:text-white">visibilidade reduzida</span>.
             </p>
 
             <div class="grid md:grid-cols-3 gap-6 text-left">
                 <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
                     <div
-                        class="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mb-4 text-red-600 dark:text-red-400">
-                        <span class="material-icons-round">block</span>
+                        class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mb-4 text-orange-600 dark:text-orange-400">
+                        <span class="material-icons-round">visibility_off</span>
                     </div>
-                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">Encandeamento Perigoso</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">As luzes do trânsito em sentido contrário fraturam no vidro sujo, cegando-o por segundos críticos.</p>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">Encandeamento</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Luzes em vidro sujo podem dispersar, dificultando a visão noturna.</p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
                     <div
-                        class="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mb-4 text-red-600 dark:text-red-400">
-                        <span class="material-icons-round">blur_on</span>
+                        class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-4 text-blue-600 dark:text-blue-400">
+                        <span class="material-icons-round">water_drop</span>
                     </div>
-                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">Visão Turva</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Em chuva forte, as escovas não dão conta. Forma-se uma cortina de água que obscurece a estrada.</p>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">Acúmulo de Água</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Em chuva forte, a água pode formar uma cortina se o vidro não for hidrofóbico.</p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
                     <div
-                        class="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mb-4 text-red-600 dark:text-red-400">
-                        <span class="material-icons-round">money_off</span>
+                        class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mb-4 text-green-600 dark:text-green-400">
+                        <span class="material-icons-round">savings</span>
                     </div>
-                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">Dinheiro Desperdiçado</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Fluidos baratos evaporam instantaneamente. Tratamentos cerâmicos custam mais de 500€. O Glass Recon é a solução ideal.</p>
+                    <h3 class="font-bold text-gray-900 dark:text-white mb-2">Custo-Benefício</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Uma alternativa acessível aos tratamentos cerâmicos profissionais caros.</p>
                 </div>
             </div>
         </div>
@@ -311,59 +272,54 @@
 
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- EUA -->
-                <a href="https://www.fasttrack36.com/PHPWHDRK/2T891M25/?uid=51347"
+                <a href="https://www.fasttrack36.com/PHPWHDRK/2T891M25/?uid=51347" rel="nofollow"
                     class="group relative bg-white dark:bg-gray-900 border-2 border-gray-100 dark:border-gray-700 rounded-2xl p-8 hover:border-blue-500 dark:hover:border-blue-500 shadow-sm hover:shadow-2xl transition-all duration-300 block text-center transform hover:-translate-y-1">
                     <div
                         class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl tracking-wider">
-                        ENVIO PRIORITÁRIO</div>
+                        ENVIO RÁPIDO</div>
                     <img src="https://flagcdn.com/w160/us.png" alt="USA"
                         class="w-20 h-auto mx-auto rounded shadow-sm mb-6 group-hover:scale-110 transition-transform">
                     <h3 class="font-display font-bold text-2xl text-gray-900 dark:text-white mb-1">Estados Unidos</h3>
-                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wide mb-6">Enviado de KY/NV (2-3 Dias Úteis)</p>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wide mb-6">Enviado de KY/NV</p>
 
                     <ul
                         class="text-left text-sm text-gray-600 dark:text-gray-300 space-y-2 mb-8 bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg">
                         <li class="flex items-center"><span
-                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Envio Sem Taxas Aduaneiras
+                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Envio Doméstico
                         </li>
                         <li class="flex items-center"><span
-                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Sem Impostos de Importação
-                        </li>
-                        <li class="flex items-center"><span
-                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Rastreio USPS / FedEx</li>
+                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Rastreio Disponível</li>
                     </ul>
 
                     <div
                         class="w-full bg-blue-600 group-hover:bg-blue-700 text-white font-bold py-4 rounded-lg uppercase tracking-wide transition-colors flex items-center justify-center">
-                        Ir para o Pagamento <span class="material-icons-round ml-2 text-sm">arrow_forward</span>
+                        Ver Ofertas nos EUA <span class="material-icons-round ml-2 text-sm">arrow_forward</span>
                     </div>
                 </a>
 
                 <!-- Canadá -->
-                <a href="https://www.fasttrack36.com/PHPWHDRK/2T891M25/?uid=51347"
+                <a href="https://www.fasttrack36.com/PHPWHDRK/2T891M25/?uid=51347" rel="nofollow"
                     class="group relative bg-white dark:bg-gray-900 border-2 border-gray-100 dark:border-gray-700 rounded-2xl p-8 hover:border-red-500 dark:hover:border-red-500 shadow-sm hover:shadow-2xl transition-all duration-300 block text-center transform hover:-translate-y-1">
                     <div
                         class="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl tracking-wider">
-                        SEM TAXAS ALFANDEGÁRIAS</div>
+                        ENVIO DOMÉSTICO</div>
                     <img src="https://flagcdn.com/w160/ca.png" alt="Canadá"
                         class="w-20 h-auto mx-auto rounded shadow-sm mb-6 group-hover:scale-110 transition-transform">
                     <h3 class="font-display font-bold text-2xl text-gray-900 dark:text-white mb-1">Canadá</h3>
-                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wide mb-6">Enviado de Toronto (3-5 Dias Úteis)</p>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wide mb-6">Enviado de Toronto</p>
 
                     <ul
                         class="text-left text-sm text-gray-600 dark:text-gray-300 space-y-2 mb-8 bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg">
                         <li class="flex items-center"><span
-                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Sem Taxas de Alfândega
+                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Sem Taxas de Importação
                         </li>
-                        <li class="flex items-center"><span
-                                class="material-icons-round text-green-500 text-sm mr-2">check</span> Devoluções Locais</li>
                         <li class="flex items-center"><span
                                 class="material-icons-round text-green-500 text-sm mr-2">check</span> Rastreio Canada Post</li>
                     </ul>
 
                     <div
                         class="w-full bg-red-600 group-hover:bg-red-700 text-white font-bold py-4 rounded-lg uppercase tracking-wide transition-colors flex items-center justify-center">
-                        Ir para o Pagamento <span class="material-icons-round ml-2 text-sm">arrow_forward</span>
+                        Ver Ofertas no Canadá <span class="material-icons-round ml-2 text-sm">arrow_forward</span>
                     </div>
                 </a>
             </div>
@@ -371,7 +327,7 @@
             <div class="mt-8 text-center">
                 <div
                     class="inline-flex items-center bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-4 py-1 rounded-full text-xs font-bold">
-                    <span class="material-icons-round text-sm mr-1">lock</span> Pagamento Seguro com Criptografia SSL de 256 bits
+                    <span class="material-icons-round text-sm mr-1">lock</span> Pagamento Seguro
                 </div>
             </div>
         </div>
@@ -383,77 +339,81 @@
 
             <div class="font-display font-bold text-2xl text-gray-300 dark:text-gray-700 uppercase mb-8">Verge Ventures</div>
 
+            <!-- Dados de Contato -->
+            <div class="grid md:grid-cols-3 gap-6 mb-10 text-xs text-gray-500 border-b border-gray-200 pb-8">
+                <div>
+                    <strong class="block text-gray-900 dark:text-gray-300 mb-1">Empresa</strong>
+                    Verge Ventures<br>
+                    2271 W Malvern Ave #164<br>
+                    Fullerton, CA, 92833, USA
+                </div>
+                <div>
+                    <strong class="block text-gray-900 dark:text-gray-300 mb-1">Email</strong>
+                    support@glassreconwindshield.com<br>
+                    <span class="text-[10px]">Resp. em 24h úteis</span>
+                </div>
+                <div>
+                    <strong class="block text-gray-900 dark:text-gray-300 mb-1">Telefone</strong>
+                    (877) 564-2544<br>
+                    <span class="text-[10px]">Seg-Sex 9am-5pm EST</span>
+                </div>
+            </div>
+
             <!-- Ligações Úteis -->
             <div class="flex flex-wrap justify-center gap-6 mb-8 text-xs font-bold text-gray-600 dark:text-gray-400 uppercase tracking-widest">
                 <button onclick="openModal('terms')" class="hover:text-primary transition">Termos de Serviço</button>
                 <button onclick="openModal('privacy')" class="hover:text-primary transition">Política de Privacidade</button>
                 <button onclick="openModal('shipping')" class="hover:text-primary transition">Política de Envio</button>
-                <button onclick="openModal('contact')" class="hover:text-primary transition">Contacte-nos</button>
             </div>
 
             <!-- Avisos Legais -->
-            <div class="text-[10px] text-gray-400 dark:text-gray-600 leading-relaxed max-w-2xl mx-auto space-y-3 text-justify last:text-center">
-                <p><strong>DIVULGAÇÃO PUBLICITÁRIA:</strong> Este site é um anúncio e não uma publicação jornalística. O produto retratado nesta página é um produto real e os resultados podem variar.</p>
-                <p><strong>DISTRIBUIDOR INDEPENDENTE AUTORIZADO:</strong> Somos um distribuidor autorizado dos produtos Glass Recon™ operado pela Verge Ventures. Todas as marcas e logótipos são propriedade dos seus respetivos donos.</p>
+            <div class="text-[10px] text-gray-400 dark:text-gray-600 leading-relaxed max-w-3xl mx-auto space-y-3 text-justify border border-gray-200 p-4 rounded bg-white dark:bg-gray-900">
+                <p class="font-bold text-center mb-2">DIVULGAÇÃO PUBLICITÁRIA & IMPORTANTE</p>
+                <p>ESTE É UM ANÚNCIO E NÃO UM ARTIGO DE NOTÍCIAS, BLOG OU ATUALIZAÇÃO DE PROTEÇÃO AO CONSUMIDOR. Esta página web destina-se a fornecer informações sobre o produto Glass Recon.</p>
+                <p>RESULTADOS: Os resultados descritos podem variar de pessoa para pessoa e não são garantidos. As representações de eficácia são baseadas em testes internos e feedback de clientes.</p>
+                <p>AFILIAÇÃO: Este site é um mercado separado. O proprietário tem uma conexão financeira com o fornecedor dos produtos referenciados no site e recebe compensação por cliques ou vendas.</p>
             </div>
 
             <p class="text-[10px] text-gray-300 mt-8">© 2026 Verge Ventures. Todos os Direitos Reservados.</p>
         </div>
     </footer>
 
+    <!-- Banner de Cookies (OBRIGATÓRIO PARA ADS 2026) -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900/95 text-white p-4 z-50 backdrop-blur-sm border-t border-gray-800" style="display: flex;">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <p class="text-xs text-gray-300">
+                Utilizamos cookies para melhorar a sua experiência e analisar o tráfego. Ao continuar, concorda com a nossa <button onclick="openModal('privacy')" class="underline text-white hover:text-primary">Política de Privacidade</button>.
+            </p>
+            <div class="flex gap-3">
+                <button onclick="document.getElementById('cookie-banner').style.display='none'" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-xs font-bold rounded transition">Recusar</button>
+                <button onclick="document.getElementById('cookie-banner').style.display='none'" class="px-4 py-2 bg-primary hover:bg-primary-hover text-white text-xs font-bold rounded transition">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Conteúdo dos Modais (Oculto) -->
     <div id="modal-terms-content" class="hidden">
         <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">TERMOS E CONDIÇÕES</h2>
         <div class="text-[13px] text-gray-700 space-y-4 max-h-[60vh] overflow-y-auto pr-4 custom-scrollbar text-left">
-            <p><strong>VISÃO GERAL</strong><br>Este site é operado pela Verge Ventures. Em todo o site, os termos “nós”, “nos” e “nosso” referem-se à Verge Ventures. A Verge Ventures oferece este site, incluindo todas as informações, ferramentas e serviços disponíveis para si, o utilizador, condicionado à sua aceitação de todos os termos, condições, políticas e avisos aqui declarados.</p>
-            <p>Ao visitar o nosso site e/ou comprar algo de nós, você envolve-se no nosso “Serviço” e concorda em estar vinculado pelos seguintes termos e condições.</p>
-            <p><strong>SECÇÃO 1 - TERMOS DA LOJA ONLINE</strong><br>Ao concordar com estes Termos de Serviço, você declara que tem pelo menos a idade de maioridade no seu estado ou província de residência. Não pode usar os nossos produtos para qualquer fim ilegal ou não autorizado.</p>
-            <p><strong>SECÇÃO 13 - RENÚNCIA DE GARANTIAS; LIMITAÇÃO DE RESPONSABILIDADE</strong><br>Não garantimos que o seu uso do nosso serviço será ininterrupto, oportuno, seguro ou livre de erros. A Verge Ventures não será responsável por qualquer dano, perda ou reclamação.</p>
-            <p><strong>SECÇÃO 21 - INFORMAÇÕES DE CONTACTO</strong><br>Perguntas sobre os Termos de Serviço devem ser enviadas para support@glassreconwindshield.com.</p>
+            <p><strong>VISÃO GERAL</strong><br>Este site é operado pela Verge Ventures. Em todo o site, os termos “nós”, “nos” e “nosso” referem-se à Verge Ventures.</p>
+            <p><strong>USO DO SITE</strong><br>Ao concordar com estes Termos de Serviço, você declara que tem pelo menos a idade de maioridade no seu estado ou província de residência.</p>
+            <p><strong>PRECISÃO DAS INFORMAÇÕES</strong><br>Não nos responsabilizamos se as informações disponibilizadas neste site não forem precisas, completas ou atuais. O material neste site é fornecido apenas para informação geral.</p>
         </div>
     </div>
 
     <div id="modal-privacy-content" class="hidden">
         <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">POLÍTICA DE PRIVACIDADE</h2>
         <div class="text-[13px] text-gray-700 space-y-4 max-h-[60vh] overflow-y-auto pr-4 custom-scrollbar text-left">
-            <p><strong>SECÇÃO 1 - O QUE FAZEMOS COM AS SUAS INFORMAÇÕES?</strong><br>Quando compra algo na nossa loja, recolhemos as informações pessoais que nos fornece, como o seu nome, morada e endereço de e-mail. Quando navega na nossa loja, recebemos também automaticamente o endereço IP do seu computador.</p>
-            <p><strong>SECÇÃO 2 - CONSENTIMENTO</strong><br>Como obtêm o meu consentimento? Quando nos fornece informações pessoais para concluir uma transação, verificar o seu cartão de crédito ou fazer um pedido, implicamos que consente na sua recolha e utilização apenas para esse fim específico.</p>
-            <p><strong>SECÇÃO 6 - SEGURANÇA</strong><br>Para proteger as suas informações pessoais, tomamos precauções razoáveis e seguimos as melhores práticas da indústria para garantir que estas não sejam perdidas, mal utilizadas, acedidas ou divulgadas indevidamente.</p>
-            <p><strong>DÚVIDAS E INFORMAÇÕES DE CONTACTO</strong><br>Se desejar aceder, corrigir ou eliminar quaisquer informações pessoais que tenhamos sobre si, contacte o nosso Responsável de Privacidade em support@glassreconwindshield.com.</p>
+            <p><strong>COLETA DE DADOS</strong><br>Respeitamos a sua privacidade. Recolhemos apenas os dados necessários para processar o seu pedido e melhorar a sua experiência.</p>
+            <p><strong>SEGURANÇA</strong><br>Implementamos medidas de segurança robustas para proteger as suas informações pessoais contra acesso não autorizado.</p>
         </div>
     </div>
 
     <div id="modal-shipping-content" class="hidden">
         <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">POLÍTICA DE ENVIO</h2>
         <div class="text-[13px] text-gray-700 space-y-4 text-left">
-            <p>Todos os pedidos são processados em 24 horas. Enviamos a partir dos nossos armazéns domésticos nos EUA (Kentucky e Nevada) e Canadá (Toronto).</p>
-            <p><strong>Estimativas de Entrega:</strong><br>EUA: 2-4 Dias Úteis<br>Canadá: 3-5 Dias Úteis</p>
-            <p>Receberá um número de rastreio por e-mail assim que o seu pedido for enviado.</p>
-        </div>
-    </div>
-
-    <div id="modal-contact-content" class="hidden">
-        <h2 class="text-xl font-bold mb-6 text-gray-900 border-b pb-2">CONTACTE-NOS</h2>
-        <div class="text-[13px] text-gray-700 space-y-6 text-left">
-            <div>
-                <strong class="text-gray-900 block mb-1">Contacte-nos por E-mail</strong>
-                <a href="mailto:support@glassreconwindshield.com" class="text-primary font-bold underline">support@glassreconwindshield.com</a>
-                <p class="text-xs text-gray-500 mt-1">Segunda a Sexta, 9:00 às 17:00 EST.</p>
-            </div>
-            <div>
-                <strong class="text-gray-900 block mb-1">Contacte-nos por Telefone</strong>
-                <p class="text-primary font-bold">(877) 564-2544</p>
-                <p class="text-xs text-gray-500 mt-1">9:00 às 17:00 EST.</p>
-            </div>
-            <div>
-                <strong class="text-gray-900 block mb-1">Detalhes da Empresa</strong>
-                <p class="leading-relaxed">
-                    Verge Ventures<br>
-                    2271 W Malvern Ave #164<br>
-                    Fullerton, CA, 92833<br>
-                    Estados Unidos
-                </p>
-            </div>
+            <p>Processamos pedidos em até 24h úteis.</p>
+            <p><strong>Prazos Estimados:</strong><br>EUA: 3-5 Dias Úteis<br>Canadá: 4-7 Dias Úteis</p>
         </div>
     </div>
 
