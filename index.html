@@ -54,21 +54,20 @@
 
     <!-- Schema.org JSON-LD (Rich Snippets) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@graph": [
+    [
         {
-          "@type": "Product",
-          "name": "Glass Recon™ Windshield Cleaning Compound",
-          "image": "https://glassreconshield.vercel.app/images/product.webp",
-          "description": "Professional-grade oil film remover and hydrophobic coating for automotive glass. Eliminates glare and improves wiper performance.",
-          "brand": {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Glass Recon™ Windshield Cleaning Compound",
+        "image": "https://glassreconshield.vercel.app/images/product.webp",
+        "description": "Professional-grade oil film remover and hydrophobic coating for automotive glass. Eliminates glare and improves wiper performance.",
+        "brand": {
             "@type": "Brand",
             "name": "Glass Recon"
-          },
-          "sku": "GR-USA-001",
-          "mpn": "GR-2026-US",
-          "offers": {
+        },
+        "sku": "GR-USA-001",
+        "mpn": "GR-2026-US",
+        "offers": {
             "@type": "Offer",
             "url": "https://glassreconshield.vercel.app/",
             "priceCurrency": "USD",
@@ -77,73 +76,84 @@
             "itemCondition": "https://schema.org/NewCondition",
             "availability": "https://schema.org/InStock",
             "seller": {
-              "@type": "Organization",
-              "name": "Verge Ventures"
+            "@type": "Organization",
+            "name": "Verge Ventures"
             },
             "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
                 "@type": "MonetaryAmount",
                 "value": "0",
                 "currency": "USD"
-              },
-              "shippingDestination": {
+            },
+            "shippingDestination": {
                 "@type": "DefinedRegion",
                 "addressCountry": "US"
-              },
-              "deliveryTime": {
+            },
+            "deliveryTime": {
                 "@type": "ShippingDeliveryTime",
                 "transitTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 2,
-                  "maxValue": 4,
-                  "unitCode": "d"
+                "@type": "QuantitativeValue",
+                "minValue": 2,
+                "maxValue": 4,
+                "unitCode": "d"
                 }
-              }
             }
-          },
-          "aggregateRating": {
+            }
+        },
+        "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
             "reviewCount": "11548"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Does Glass Recon remove stubborn oil film?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, Glass Recon uses a specialized abrasive compound to strip away oil film, water spots, and road grime that standard cleaners cannot remove."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is this a rain repellent?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. After cleaning, Glass Recon leaves a hydrophobic layer that repels rain and improves visibility during storms."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does shipping take to the USA?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We ship from Kentucky and Nevada. Orders typically arrive within 2-4 business days via USPS or FedEx."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "name": "Glass Recon Official",
-          "url": "https://glassreconshield.vercel.app/"
         }
-      ]
-    }
+        },
+        {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://glassreconshield.vercel.app/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Automotive Care",
+            "item": "https://glassreconshield.vercel.app/#automotive"
+        },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Glass Recon Kit",
+            "item": "https://glassreconshield.vercel.app/#product"
+        }]
+        },
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "How long does the hydrophobic effect last?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With proper application, the hydrophobic shield lasts between 3 to 6 months depending on weather conditions and wiper usage."
+            }
+        },{
+            "@type": "Question",
+            "name": "Can I use this on tinted windows?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glass Recon is designed for exterior glass only. It is safe for all exterior automotive glass but should not be applied to interior tinted films."
+            }
+        },{
+            "@type": "Question",
+            "name": "Does it remove hard water spots?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The micro-abrasive formula effectively removes hard water spots, tree sap, and road grime that normal washing misses."
+            }
+        }]
+        }
+    ]
     </script>
 
     <!-- Tracking Script -->
@@ -207,6 +217,39 @@
 
         details>summary::-webkit-details-marker {
             display: none;
+        }
+
+        /* FAQ Accordion Styling */
+        details {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+        }
+        .dark details {
+            border-color: #374151;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; margin-top: -10px}
+            100%  {opacity: 1; margin-top: 0px}
+        }
+        summary {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        summary:after {
+            content: '+';
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #FF7D00;
+        }
+        details[open] summary:after {
+            content: '-';
         }
 
         .custom-scrollbar::-webkit-scrollbar {
@@ -444,6 +487,39 @@
                     class="inline-flex items-center bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-4 py-1 rounded-full text-xs font-bold">
                     <span class="material-icons-round text-sm mr-1">lock</span> Secure Payment
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (NEW - High Quality SEO Content) -->
+    <section class="py-8 px-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-2xl mx-auto">
+            <h3 class="font-bold text-center text-lg mb-6 text-gray-900 dark:text-white uppercase tracking-wide">Frequently Asked Questions</h3>
+            <div class="space-y-1">
+                <details class="group">
+                    <summary class="text-gray-800 dark:text-gray-200">How long does Glass Recon last?</summary>
+                    <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                        The hydrophobic protective layer typically lasts 3 to 6 months, depending on weather conditions and how often you use your wipers. For best results, reapply when water beading begins to diminish.
+                    </p>
+                </details>
+                <details class="group">
+                    <summary class="text-gray-800 dark:text-gray-200">Is it safe for tinted windows?</summary>
+                    <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                        Glass Recon is formulated for <strong>exterior glass only</strong>. It is perfectly safe for all exterior automotive glass, including side mirrors and rear windshields, but should not be applied to interior aftermarket tint film.
+                    </p>
+                </details>
+                <details class="group">
+                    <summary class="text-gray-800 dark:text-gray-200">Can I use it on side mirrors?</summary>
+                    <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                        Yes! Applying it to side mirrors significantly improves visibility during heavy rain by preventing water droplets from sticking to the surface.
+                    </p>
+                </details>
+                <details class="group">
+                    <summary class="text-gray-800 dark:text-gray-200">How fast is shipping?</summary>
+                    <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                        We ship daily from our warehouses in Kentucky (USA) and Toronto (Canada). Most orders arrive within 2-4 business days.
+                    </p>
+                </details>
             </div>
         </div>
     </section>
